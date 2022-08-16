@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Titillium Web';
+box-sizing: border-box;
+}
+.contenedor {
+    background-color: black;
+
+}
+.texto {
+    color: white;
+}
+.header{
+    background-image: image(ne ) ;
+    color: aliceblue;
+    text-align: right;
+  }
+
+body {
+  background: #212121;
+  padding: 50px 0;
+}
+
+.navbar {
+  font-family:'Titillium Web';
+  color:#3DA35D;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.navbar * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.navbar a {
+  padding: .5em .8em;
+  color: rgba(255,255,255,.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a::before,
+.navbar a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.navbar a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #3E8914;
+  border-right: 3px solid #2E640F;
+  transform: translate(-100%, 50%);
+}
+
+.navbar a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #2E640F;
+  border-left: 3px solid #3E8914;
+  transform: translate(100%, -50%)
+}
+
+.navbar a:hover:before,
+.navbar a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.navbar a:hover {
+  color: #3DA35D;
+}
+.footer {
+    background-color: deeppink ;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+    left: 0%;
+    margin: 0rem;
+    padding: 0rem; }
+  
